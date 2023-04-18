@@ -10,8 +10,8 @@ const meter = ref<Odometer>()
 const el = ref()
 
 const props = withDefaults(defineProps<{
-  theme?: Odometer.OdeMeterThemeOption,
-  format?: ''
+  theme?: "default" | "car" | "plaza" | "slot-machine" | "digital" | "minimal",
+  format?: string
 }>(), {
   theme: 'default',
   format: ''
@@ -22,7 +22,7 @@ onMounted(() => {
     el: el.value,
     value: '',
     theme: props.theme,
-    format: props.format,
+    format: props.format
   })
 })
 

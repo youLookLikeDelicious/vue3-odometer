@@ -10,5 +10,5 @@ declare class Odometer {
 export = Odometer
 
 declare namespace Odometer {
-  export type  OdeMeterThemeOption = 'default' | 'car' | 'plaza' | 'slot-machine' | '	digital'
+  export type  OdeMeterThemeOption = 'default' | 'car' | 'plaza' | 'slot-machine' | '	digital' | 'minimal'
 }

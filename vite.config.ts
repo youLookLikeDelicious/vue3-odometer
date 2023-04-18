@@ -10,9 +10,9 @@ export default defineConfig({
   ],
   build: {
     lib: {
-      entry: resolve(__dirname, 'packages/components/odometer.ts'),
+      entry: resolve(__dirname, 'packages/components/index.ts'),
       name: 'odometer',
-      fileName: (format) => `odometer.${format}.js`
+      fileName: (format) => `index.${format}.js`
     },
     rollupOptions: {
       external: ['vue'],
